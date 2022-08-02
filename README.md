@@ -1,4 +1,5 @@
-#SkillStra
+## SkillStra
+
 Responsive website created using React-Js (JSX). It has integrated google forms on button clicks which stores responses in a spreadsheet as required by clients.
 
 SkillStra is a human resource development marketplace.SkillStra is a training and consultation platform that delivers training programs and workshops designed to cater to the organizations' needs for skill development.Whether an individual wants to switch career, upskill, or join the workforce after a break, skillstra caters to all such needs as well.Customized programs and trainings offer support to university students, especially fresh graduates, in polishing their skillset and enabling them to stay relevant in the job market. Apart from trainings, skillstra also provide business consultations for Small Medium Enterprises and start-ups. We, at Skillstra, aim to raise the standards of professionalism by providing excellent services to fulfil the needs of Human Capital Development and as a company skillstra intends on being the household name in training and development industry of Pakistan. Skillstra envisions to become a household name in the local training & development industry.
