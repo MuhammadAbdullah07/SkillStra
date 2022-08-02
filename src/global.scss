@@ -1,0 +1,7 @@
+
+$width: 768px;
+@mixin mob {
+    @media (max-width: #{$width}){
+            @content
+    }
+}

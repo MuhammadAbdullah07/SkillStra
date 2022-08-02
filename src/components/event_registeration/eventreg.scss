@@ -1,0 +1,37 @@
+@import "../../global.scss";
+
+
+.eventreg{
+    overflow:hidden;
+    height: 100vh;
+}
+.reg-alter{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    @include mob{
+        margin-top: 10%;
+        padding-top: 10%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        padding-top: 136px;
+        padding-bottom: 220px;
+    }
+    @media screen and (max-width:600px) {
+        margin-top: 10%;
+        padding-top: 10%;
+        padding-bottom: 125px;
+    }
+    @media screen and (min-width:350px) and (max-width:767) {
+        margin: 0;
+    width: 100%;
+    padding-top: 10%;
+    }
+}

@@ -1,0 +1,458 @@
+@import "../../global.scss";
+
+.events{
+    background-color: white;    
+    height: 100vh;
+}
+.event-container{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.row-up{
+    height: 70%;
+    width: 100%;
+    background-color:white;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    @include mob{
+        width: 100%;
+        height: 70%;
+    }
+}
+.row-up img{
+    width: 100%;
+    height: 350px;
+    @include mob{
+        width: 100%;
+        height: 500px;
+    }
+}
+
+.row-up a{
+    color: white;
+    text-decoration: underline;
+}
+.row-up h1{
+    font-size: 48px;
+    @media screen and (max-width:360px){
+        font-size: 38px;
+    }
+}
+.row-up  .centered {
+    background-color: rgba(0, 0, 0, 0.473);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 2%;
+    @include mob{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+    }
+}
+
+.row-down{
+
+    height: 30%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    overflow-y: hidden;
+    @include mob{
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+    }
+}
+.row-down .cardleft{
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-box-shadow: 0 13px 27px -5px hsla(240, 30.1%, 28%, 0.25), 0 8px 16px -8px hsla(0, 0%, 0%, 0.3), 0 -6px 16px -6px hsla(0, 0%, 0%, 0.03);
+            box-shadow: 0 13px 27px -5px hsla(240, 30.1%, 28%, 0.25), 0 8px 16px -8px hsla(0, 0%, 0%, 0.3), 0 -6px 16px -6px hsla(0, 0%, 0%, 0.03);
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    overflow: hidden;
+    cursor: pointer;
+    color: #1F7A8C;
+    background-color: white;
+}
+.right_alter{
+    margin-right: 4px;
+    margin-bottom: 5px;
+}
+.left_alter{
+    margin-left: 4px;
+    margin-bottom: 5px;
+}
+.cardleft .h4container {
+    padding: 2px 16px;
+    text-align:center;
+}
+.cardleft:hover {
+    -webkit-box-shadow: 0 13px 40px -5px hsla(240, 30.1%, 28%, 0.12), 0 8px 32px -8px hsla(0, 0%, 0%, 0.14), 0 -6px 32px -6px hsla(0, 0%, 0%, 0.02);
+            box-shadow: 0 13px 40px -5px hsla(240, 30.1%, 28%, 0.12), 0 8px 32px -8px hsla(0, 0%, 0%, 0.14), 0 -6px 32px -6px hsla(0, 0%, 0%, 0.02);
+    color: white;
+    background-color: #1F7A8C;
+}
+.cardleft img{
+    width: 100%;
+    height: 35%;
+}
+
+@media screen and (min-width: 1921px) {
+    .row-up img{
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+    .row-up img{
+        height: 330px;
+    }
+    .row-down .cardleft img{
+        height: 170px;
+    }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1440px) {
+    .row-up img{
+        height: 330px;
+    }
+    .row-down .cardleft img{
+        height: 170px;
+    }
+}
+
+@media screen and (min-width: 770px) and (max-width: 1280px) {
+    .events{
+        padding-bottom: 3%;
+    }
+    .row-up img{
+        height: 370px;
+    }
+    .cardleft{
+        height: 150px;
+    }
+    .row-down .cardleft img{
+        width: 100%;
+        height: 120px;
+    } 
+    .row-up .centered h1{
+        font-size: 40px;
+    }
+}
+
+
+@media screen and (max-width:769px) and (min-width:670px) {
+    .row-up img{
+        height: 350px;
+    }
+    .row-up h1{
+        font-size: 60px;
+    }
+    .row-up .centered{
+        height: -webkit-min-content;
+        height: -moz-min-content;
+        height: min-content;
+        width: -webkit-min-content;
+        width: -moz-min-content;
+        width: min-content;
+    }
+    .row-down .cardleft img{
+        height: 120px;
+    }
+    .cardleft{
+        height: 160px;
+    }
+    .row-up .centered h1{
+        font-size: 45px;
+    }
+}
+@media screen and (max-width:669px) and (min-width:615px) {
+    .row-up img{
+        height: 350px;
+    }
+    .row-up h1{
+        font-size: 60px;
+    }
+    .row-up .centered{
+        height: -webkit-min-content;
+        height: -moz-min-content;
+        height: min-content;
+        width: -webkit-min-content;
+        width: -moz-min-content;
+        width: min-content;
+    }
+    .row-down .cardleft img{
+        height: 130px;
+    }
+    .cardleft{
+        height: 170px;
+    }
+    .row-up .centered h1{
+        font-size: 45px;
+    }
+}
+@media screen and (max-width:614px) and (min-width:541px) {
+    .row-up img{
+        height: 350px;
+    }
+    .row-up h1{
+        font-size: 60px;
+    }
+    .row-up .centered{
+        height: -webkit-min-content;
+        height: -moz-min-content;
+        height: min-content;
+        width: -webkit-min-content;
+        width: -moz-min-content;
+        width: min-content;
+    }
+    .row-down .cardleft img{
+        height: 130px;
+    }
+    .cardleft{
+        height: 165px;
+    }
+    .row-up .centered h1{
+        font-size: 45px;
+    }
+}
+@media screen and (min-width:469px) and (max-width:540px){
+    .row-up img{
+        height: 350px;
+    }
+    .row-up h1{
+        font-size: 60px;
+    }
+    .row-up .centered{
+        height: -webkit-min-content;
+        height: -moz-min-content;
+        height: min-content;
+        width: -webkit-min-content;
+        width: -moz-min-content;
+        width: min-content;
+    }
+    .row-down .cardleft img{
+        height: 130px;
+    }
+    .cardleft{
+        height: 165px;
+    }
+    .row-up .centered h1{
+        font-size: 45px;
+    }
+}
+
+
+
+
+
+@media screen and (min-width:460px) and (max-width:468px){
+    .events{
+        padding-top: 3%;
+    }
+    .row-up img{
+        height: 350px;
+    }
+    .row-up h1{
+        font-size: 60px;
+    }
+    .row-up .centered{
+        height: -webkit-min-content;
+        height: -moz-min-content;
+        height: min-content;
+        width: -webkit-min-content;
+        width: -moz-min-content;
+        width: min-content;
+    }
+    .row-down .cardleft img{
+        height: 130px;
+    }
+    .cardleft{
+        height: 165px;
+    }
+    .row-up .centered h1{
+        font-size: 45px;
+    }
+}
+@media screen and (max-width:459px) and (min-width:410px) {
+    .events{
+        padding-top: 3%;
+    }
+    .row-up img{
+        height: 350px;
+    }
+    .row-up .centered{
+        height: -webkit-min-content;
+        height: -moz-min-content;
+        height: min-content;
+        width: -webkit-min-content;
+        width: -moz-min-content;
+        width: min-content;
+    }
+    .row-down .cardleft img{
+        height: 140px;
+    }
+    .cardleft{
+        height: 170px;
+    }
+    .row-up .centered h1{
+        font-size: 40px;
+    }
+}
+@media screen and (min-width:398px) and (max-width:460px){
+    .events{
+        padding-top: 3%;
+    }
+    .row-up img{
+        height: 350px;
+    }
+    .row-up .centered{
+        height: -webkit-min-content;
+        height: -moz-min-content;
+        height: min-content;
+        width: -webkit-min-content;
+        width: -moz-min-content;
+        width: min-content;
+    }
+    .row-down .cardleft img{
+        height: 140px;
+    }
+    .cardleft{
+        height: 170px;
+    }
+    .row-up .centered h1{
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width:373px) and (max-width:398px){
+    .row-up img{
+        height: 350px;
+    }
+    .row-up .centered{
+        height: -webkit-min-content;
+        height: -moz-min-content;
+        height: min-content;
+        width: -webkit-min-content;
+        width: -moz-min-content;
+        width: min-content;
+    }
+    .row-down .cardleft img{
+        height: 120px;
+    }
+    .row-down .cardleft h4{
+        font-size: 14px;
+    }
+    
+    .cardleft{
+        height: 160px;
+    }
+    .row-up .centered h1{
+        font-size: 35px;
+    }
+}
+
+@media screen and (min-width:335px) and (max-width:372px){
+    .row-up img{
+        height: 350px;
+    }
+    .row-up .centered{
+        height: -webkit-min-content;
+        height: -moz-min-content;
+        height: min-content;
+        width: -webkit-min-content;
+        width: -moz-min-content;
+        width: min-content;
+    }
+    .row-down .cardleft img{
+        height: 130px;
+    }
+    .row-down .cardleft h4{
+        font-size: 11px;
+    }
+    
+    .cardleft{
+        height: 160px;
+    }
+    .row-up .centered h1{
+        font-size: 35px;
+    }
+}
+
+
+@media screen and (min-width:283px) and (max-width:334px){
+    .row-up img{
+        height: 350px;
+    }
+    .row-up .centered{
+        height: -webkit-min-content;
+        height: -moz-min-content;
+        height: min-content;
+        width: -webkit-min-content;
+        width: -moz-min-content;
+        width: min-content;
+    }
+    .row-down .cardleft img{
+        height: 130px;
+    }
+    .row-down .cardleft h4{
+        font-size: 9px;
+    }
+    
+    .cardleft{
+        height: 160px;
+    }
+    .row-up .centered h1{
+        font-size: 25px;
+    }
+}
+
+
+@media screen and (min-width:200px) and (max-width:282px){
+    .row-up img{
+        height: 300px;
+    }
+    .row-up .centered{
+        height: -webkit-min-content;
+        height: -moz-min-content;
+        height: min-content;
+        width: -webkit-min-content;
+        width: -moz-min-content;
+        width: min-content;
+    }
+    .row-up h1{
+        font-size: 25px;
+    }
+    .row-down .cardleft img{
+        height: -webkit-min-content;
+        height: -moz-min-content;
+        height: min-content;
+    }
+    .row-down .cardleft h4{
+        font-size: 15px;
+    }
+}

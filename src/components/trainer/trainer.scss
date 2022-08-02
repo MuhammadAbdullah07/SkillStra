@@ -1,0 +1,332 @@
+.trainer{
+    background-color: #E1E5F2;
+    color: #fff;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 100vh;
+    scrollbar-width: none;
+    overflow: hidden;
+    overflow-y: hidden;
+    scrollbar-width: none; //firefox
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+}
+.wrapper{
+    padding: 3%;
+}
+
+.wrapper h1 {
+    text-align: center;
+    color: #000000;
+    font-size: 48px;
+    line-height: 1.4;
+    margin-bottom: 2.5%;
+}
+.tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.tabs button {
+    background-color:white;
+    border-color: black;
+    cursor: pointer;
+    padding: 25px;
+    width: 100%;
+    -webkit-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.tabs button:hover {
+    color: white;
+    background-color: #1F7A8C;
+}
+
+.tabs button:disabled {
+    background-color: #022B3A;
+    color: white;
+}
+
+.title {
+    color: black;
+    font-size: medium;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.content {
+    padding: 50px 80px;
+    background-color: white;
+    color: #000000;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.details {
+    color: #000000;
+    text-align: left;
+} 
+
+
+.payment .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.buttons a {
+    height: min-content;
+    border: 0;
+    font-size: 16px;
+    border-radius: 25px;
+    padding: 12px 30px;
+    margin-top: 30px;
+    margin-bottom: 45px;
+    cursor: pointer;
+    color: #FFF;
+    background-color:  #022B3A;
+    text-align: center;
+ }
+ 
+ .buttons a:hover {
+    opacity: 75%;
+ }
+
+.register{
+    float: right;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .trainer{
+        height: 100vh;
+    }
+    .trainer .wrapper h1{
+        font-size: 30px;
+    }
+    .container {
+        width: 100%;
+    }
+
+    .content {
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width:309px) and (min-width:293px){
+    .trainer{
+        margin-top: 0px;
+        padding: 0%;
+        overflow: scroll;
+    }
+    .content{
+        overflow-y: hidden;
+    }
+    .tabs{
+        overflow-y: hidden;
+    }
+    .buttons{
+        margin-top: -5%;
+    } 
+    
+    .trainer .wrapper h1{
+        font-size: 15px;
+    }
+    .wrapper{
+        height: min-content;
+        width: min-content;
+    }
+    .content{
+        height: min-content;
+        width: min-content;
+    }
+    .details{
+        height: min-content;
+        width: min-content;
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width:339px) and (min-width:310px){
+    .content{
+        overflow-y: hidden;
+    }
+    .tabs{
+        overflow-y: hidden;
+    }
+    .buttons{
+        margin-top: -5%;
+    }  
+    
+    .trainer .wrapper h1{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:369px) and (min-width:340px){
+    .content{
+        overflow-y: hidden;
+    }
+    .tabs{
+        overflow-y: hidden;
+    }
+    .buttons{
+        margin-top: -5%;
+    }  
+    
+    .trainer .wrapper h1{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:449px) and (min-width:370px){
+    .trainer{
+        margin-top: 0%;
+        padding-top: 0%;
+    }
+    .trainer h1{
+        font-size: 20px;
+    }
+    .buttons{
+        margin-top: -5%;
+    }   
+    
+    .trainer .wrapper h1{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:499px) and (min-width:450px){
+    .trainer{
+        margin-top: 0%;
+        padding-top: 3%;
+    }
+    .trainer h1{
+        font-size: x-large;
+    }
+    .buttons{
+        margin-top: -1%;
+    }  
+    
+    .trainer .wrapper h1{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:599px) and (min-width:500px){
+    .trainer{
+        margin-top: 0%;
+        padding-top: 3%;
+    }
+    .trainer h1{
+        font-size: xx-large;
+    } 
+}
+
+
+
+@media screen and (max-width:699px) and (min-width:600px){
+    .trainer{
+        margin-top: 0%;
+        padding-top: 5%;
+    }
+    .trainer h1{
+        font-size: xx-large;
+    }
+    .buttons{
+        margin-top: -1%;
+    }
+}
+
+@media screen and (max-width:768px) and (min-width:700px){
+    .trainer{
+        margin-top: 0%;
+        padding-top: 3%;
+    }
+    .trainer h1{
+        font-size: xx-large;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 919px) {
+    .trainer{
+        margin-top: 0%;
+        padding-top: 3%;
+    }
+    .trainer h1{
+        font-size: xx-large;
+    }
+}
+
+@media screen and (min-width: 920px) and (max-width: 1280px) {
+    .trainer{
+        margin-top: 0%;
+        padding-top: 0%;
+    }
+    .content{
+        height: -webkit-min-content;
+        height: -moz-min-content;
+        height: min-content;
+    }
+    .buttons{
+        margin-top: -1%;
+    }    
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1440px) {
+    .trainer{
+        margin-top: 0%;
+        padding-top: 0%;
+    }
+    .content{
+        height: -webkit-min-content;
+        height: -moz-min-content;
+        height: min-content;
+    }
+    .buttons{
+        margin-top: -1%;
+    }  
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+    .trainer{
+        margin-top: 0%;
+        padding-top: 0%;
+    }
+    .content{
+        height: -webkit-min-content;
+        height: -moz-min-content;
+        height: min-content;
+    }
+    .buttons{
+        margin-top: -1%;
+    } 
+}
+
+@media screen and (min-width: 1921px) {
+    .trainer{
+        margin-top: 0%;
+        padding-top: 1%;
+    }
+    .content{
+        height: -webkit-min-content;
+        height: -moz-min-content;
+        height: min-content;
+    }
+    .buttons{
+        margin-top: -1%;
+    }
+}
+   
+
+
+
+
+
+  

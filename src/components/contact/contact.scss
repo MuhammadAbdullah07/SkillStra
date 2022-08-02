@@ -1,0 +1,405 @@
+@import "../../global.scss";
+.contact{
+    height:100vh;
+}
+
+.rowup{
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;    
+    @include mob{
+        -webkit-box-orient:horizontal;
+        -webkit-box-direction:normal;
+            -ms-flex-direction:row;
+                flex-direction:row;
+        overflow: scroll;
+    }
+    .left{
+        background-color: white;
+        -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
+        overflow: hidden;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        @media screen and (max-width:600px) {
+             display: visible;
+        }
+    }
+    .center{
+        background-color: white;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        text-align: center;
+        margin: auto;
+        margin-top: 20%;
+        text-align: left;
+        @include mob{
+            margin-top: 40%;
+            width: 350px;
+        }
+
+    }
+    @media screen and (max-width:682px) and (min-width:600px) {
+        .center{
+            width: fit-content;
+        }
+        
+    }
+    @media screen and (max-width:599px) and (min-width:500px) {
+        .center{
+            width: fit-content;
+        }
+    }
+    @media screen and (max-width:499px) and (min-width:430px) {
+        .center{
+            width: fit-content;
+        }
+    }
+
+    @media screen and (max-width:429px) and (min-width:415px) {
+        .center{
+            width: fit-content;
+        }
+        .center h1{
+            font-size: 20px;
+        }
+        .center .phone{
+              float: left;
+        }
+        .center .social_media a i{
+            float: left;
+        }
+    }
+    
+    @media screen and (max-width:414px) and (min-width:400px) {
+        .left{
+            display: none;
+        }
+        .center{
+            width: min-content;
+        }
+        .center h1{
+            font-size: 20px;
+        }
+        .center .phone{
+            margin-left: 11%;
+            margin-right:11% ;
+
+        }
+        .center .email{
+            margin-left: 11%;
+            margin-right:11% ;
+            font-size: 10.5px;
+        }
+        .center .social_media a i{
+            margin-right: 70px;
+        }
+    }
+    
+    @media screen and (max-width:399px) and (min-width:360px) {
+        .left{
+            display: none;
+        }
+        .center{
+            width: 170px;
+        }
+        .center h1{
+            font-size: 25px;
+        }
+        .center .phone{
+            margin-left: 11%;
+            margin-right:11% ;
+
+        }
+        .center .email{
+            display: none;
+        }
+        .center .social_media a i{
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+
+    .center h1{
+        color: #022B3A;
+        -webkit-text-decoration-line:underline;
+                text-decoration-line:underline;
+        @include mob{
+            text-align: center;
+        }
+        @media screen and (max-width:400px) {
+        
+            font-size: larger;
+        }
+      
+    }
+    .center a{
+        color: black;
+        text-decoration: none; 
+    }
+
+    .phone{
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        @include mob{
+            margin: auto;
+            width: -webkit-fit-content;
+            width: -moz-fit-content;
+            width: fit-content;
+        }
+    }
+    .phone i{
+        float: left;
+        @include mob{
+            float: left;
+        }
+    }
+    .phone p{
+        float: right;
+        margin-left: 20px;
+        @include mob{
+            margin-left: 8px;
+        }
+    }
+    .email{
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+
+        @include mob{
+            margin: auto;
+            width: -webkit-fit-content;
+            width: -moz-fit-content;
+            width: fit-content;
+        }
+    }
+    .email i{
+        float: left;
+        @include mob{
+            float: left;
+        }
+    }
+    .email a{
+        float: right;
+        margin-left: 20px;
+        @include mob{
+            float: right;
+            margin-left: 8px;
+        }
+        @media screen and (max-width:400px) {
+            font-size: 13px;
+        }
+    }
+    .social_media{
+        @include mob{
+            margin-left: 100px;
+        }
+    }
+    .social_media i{
+        margin: 5px;
+    }
+    .social_media i:hover{
+        opacity: 70%;
+    }
+}
+.rowdown{   
+    text-align: center;
+    color: white;
+    background-color: #12434d;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+
+}
+.copyright{
+    background-color: #022b3a7e;
+}
+.devby{
+    background-color:#12434d;
+    text-align: center;
+    color: white;
+    padding-top: 8px;
+}
+.devby a{
+    color: white;
+    text-decoration: underline;
+}
+.contact{
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    @include mob{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+}
+.devlinks{
+    margin-left: 10px;
+}
+
+
+
+
+.rightcontact{
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+
+    h1{
+        color: #022B3A;
+        text-decoration: underline;
+    }
+
+    form{
+        width: 70%;
+        height: 70%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+
+        @include mob{
+        margin: 5px;
+        border-color: black;
+        border: 10px;
+        }
+
+        input{
+            width: 300px;
+            height: 30px;
+            font-size: 14px;
+            @include mob{width: 170px;
+            height:fit-content;
+            }
+            @media screen and (max-width:400px) {
+                width: 100px;
+            height:fit-content;
+            }
+        }
+
+        textarea{
+            width: 300px;
+            height: 200px;
+            font-size: 14px;
+
+            @include mob{width: 170px;
+            height: fit-content;
+            }
+            @media screen and (max-width:400px) {
+                width: 100px;
+            height:fit-content;
+            }
+        }
+
+        button{
+            width: 150px;
+            height: 30px;
+            color: white;
+            background-color:#022B3A;
+            border: none;
+            border-radius: 10px;
+            font-weight: 500;
+            cursor: pointer;
+
+            &:focus{
+                outline: none;
+            }
+        }
+        button:hover{
+            opacity: 80%;
+        }
+
+        span{
+            color: green;
+        }
+    }
+}
+@media screen and (max-width:375px) {
+    .center .email{
+        margin-left: 85px;
+    }
+}
+@media screen and (max-width:414px) {
+    .center h1{
+        font-size: x-large;
+        margin-right: 55px;
+    }
+    .center .email{
+        margin-left: 55px;
+        font-size: 14px;
+    }
+    .center .phone{
+        margin-left: 55px;
+    }
+    .rightcontact h1{
+        margin-top: 50px;
+    }
+    .rightcontact form input{
+        margin-top: 0%;
+        width: 100px;
+        margin-left: -7px;
+    }
+    .rightcontact form textarea{
+        width: 100px;
+        margin-left: -7px;
+    }
+    .rightcontact form h1{
+        font-size: large;
+    }   
+}
+@media screen and (max-width:360px) {
+    .left{
+        display: none;
+    }
+    .center .email{
+        margin-left: 80px;
+        font-size: 14px;
+    }
+    .center .phone{
+        margin-left: 80px;
+    }
+}

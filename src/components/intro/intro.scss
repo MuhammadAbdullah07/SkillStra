@@ -1,0 +1,229 @@
+
+*,
+*::after,
+*::before {
+   margin: 0;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Open Sans', sans-serif;
+}
+
+.intro {
+   background-color: #FFF;
+   padding: 5% 10%;
+   overflow-y: hidden;
+   height: 100vh;
+}
+
+/* Start Landing Page */
+
+.landingpage {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: horizontal;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: row;
+           flex-direction: row;
+   width: 100%;
+   margin: 0;
+}
+
+.landingpage .info {
+   padding: 5% 5% 5% 0;
+   width: 50%;
+}
+
+.landingpage .info h1 {
+   margin: 0 0 5% 0;
+   line-height: 1.6;
+}
+
+.landingpage .info p {
+   margin: 0;
+   line-height: 1.6;
+   color: #1F7A8C;
+}
+
+.landingpage .info a {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   border: 0;
+   font-size: 16px;
+   border-radius: 25px;
+   padding: 12px 30px;
+   width: 130px;
+   margin-top: 5%;
+   cursor: pointer;
+   color: #FFF;
+   background-color: #022B3A;
+   text-align: center;
+}
+
+.landingpage .info a:hover {
+   background-color: #1F7A8C;
+}
+
+.landingpage .image {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+   width: 50%;
+}
+
+.landingpage .image img {
+   max-width: 100%;
+}
+
+/* End Landing Page */
+
+// ////////////////////////////////////////////
+// Media Queries
+
+/*desktops - higher resolution*/
+@media (min-width: 1281px) {
+   .landingpage {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+   }
+
+   .landingpage .info {
+      width: 50%;
+   }
+
+   .landingpage .image {
+      width: 50%;
+   }
+}
+
+/*laptops, desktops*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+   .landingpage {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+   }
+
+   .landingpage .info {
+      width: 50%;
+   }
+
+   .landingpage .image {
+      width: 50%;
+   }
+}
+
+/*tablets, ipads (portrait)*/
+@media (min-width: 768px) and (max-width: 1024px) {
+   .landingpage {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+   }
+
+   .landingpage .info {
+      padding: 5% 0;
+      width: 100%;
+   }
+
+   .landingpage .image {
+     display: none;
+   }
+}
+
+/*low resolution tablets, mobiles (landscape)*/
+@media (min-width: 481px) and (max-width: 767px) {
+   .landingpage {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+   }
+
+   .landingpage .info {
+      padding: 5% 0;
+      width: 100%;
+   }
+
+   .landingpage .image {
+      display: none;
+   }
+}
+
+/*smartphones mobiles (portrait)*/
+@media (min-width: 320px) and (max-width: 480px) {
+   .intro{
+      overflow-y: scroll;
+   }
+   .landingpage {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+   }
+
+   .landingpage .info {
+      padding: 5% 0;
+      width: 100%;
+   }
+
+   .landingpage .image {
+      display: none;
+   }
+}
+
+@media (min-width: 250px) and (max-width: 319px) {
+   .intro{
+      overflow-y: scroll;
+   }
+   .landingpage {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+   }
+
+   .landingpage .info {
+      padding: 5% 0;
+      width: 100%;
+   }
+
+   .landingpage .image {
+      display: none;
+   }
+}
+
+@media (min-width: 200px) and (max-width: 249px) {
+   .landingpage {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+   }
+
+   .landingpage .info {
+      padding: 5% 0;
+      width: 100%;
+   }
+
+   .landingpage .image {
+      display: none;
+   }
+}

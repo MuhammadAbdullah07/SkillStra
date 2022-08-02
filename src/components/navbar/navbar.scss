@@ -1,0 +1,158 @@
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: fixed;
+    z-index: 2;
+    padding: 0 10%;
+    height: 10vh;
+    width: 100%;
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 0 2px 0px 0 #E1E5F2;
+            box-shadow: 0 2px 0px 0 #E1E5F2;
+}
+
+.nav__brand {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-transform: uppercase;
+    height: 10vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #000000;
+    letter-spacing: 3px;
+}
+
+.brandSpan {
+    border: 2px black solid;
+    font-weight: 600;
+    color: #1F7A8C;
+    padding-left: 2px;
+    letter-spacing: 2px;
+    margin-right: 3px;
+}
+
+ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    font-size: 16px;
+}
+
+.nav__item {
+    list-style: none;
+}
+
+.nav__link {
+    color: #1F7A8C;
+    margin: 15px;
+}
+
+.nav__link:hover {
+    color: #022B3A;
+    -webkit-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+}
+
+.nav__toggler {
+    display: none;
+}
+
+.nav__toggler div {
+    width: 2rem;
+    height: 0.2rem;
+    margin: 0.4rem;
+    background: #1F7A8C;
+    -webkit-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+}
+
+.nav__toggler div:hover {
+    background: #022B3A;
+}
+
+@media screen and (max-width: 1024px) {
+    .nav__toggler {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav__menu {
+        position: fixed;
+        top: calc(10vh + 1px);
+        right: 0;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        height: 70vh;
+        width: 50vw;
+        gap: 0rem;
+        background: #FFFFFF;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-transform: translateX(100%);
+            -ms-transform: translateX(100%);
+                transform: translateX(100%);
+        -webkit-transition: 0.5s ease-in;
+        -o-transition: 0.5s ease-in;
+        transition: 0.5s ease-in;
+        -webkit-box-shadow: 0 0px 0px 1px #E1E5F2;
+                box-shadow: 0 0px 0px 1px #E1E5F2;
+    }
+}
+
+/* Active Class */
+.nav__active {
+    -webkit-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+            transform: translateX(0%);
+}
+
+/* Toggle Icon Animation */
+
+.toggle .line1 {
+    -webkit-transform: rotate(-45deg) translate(-4px, 5px);
+        -ms-transform: rotate(-45deg) translate(-4px, 5px);
+            transform: rotate(-45deg) translate(-4px, 5px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    -webkit-transform: rotate(45deg) translate(-4px, -5px);
+        -ms-transform: rotate(45deg) translate(-4px, -5px);
+            transform: rotate(45deg) translate(-4px, -5px);
+}

@@ -1,0 +1,62 @@
+@import './global.scss';
+
+.app{
+    height: 100vh;
+    scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+        scrollbar-width: none; //firefox
+        -ms-overflow-style: none;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    .sections{
+        margin: 0;
+        margin-top: 10vh;
+        width: 100%;
+        height: calc(100vh - 10vh);
+        background-color: white;
+        position: relative;
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+        scrollbar-width: none; //firefox
+        -ms-overflow-style: none;
+        &::-webkit-scrollbar{
+           display:none ;
+        }
+        >*{
+            width: 100vw;
+            height: calc(100vh - 10vh);
+            scroll-snap-align: start ;
+        }
+        @include mob{
+            margin: 0;
+        margin-top: 10vh;
+        width: 100%;
+            scrollbar-width: block; //firefox
+            -ms-overflow-style: block;
+            &::-webkit-scrollbar{
+               display:block;
+            }   
+        }
+        @media screen and (min-width:350px) and (max-width:767) {
+            margin: 0;
+        margin-top: 10vh;
+        width: 100%;
+        scroll-snap-type: none;
+        }
+    }
+    .services{
+        height: calc(100vh);
+        @include mob{
+            margin: 0;
+        margin-top: 10vh;
+        width: 100%;
+            scrollbar-width: block; //firefox
+            -ms-overflow-style: block;
+            &::-webkit-scrollbar{
+               display:block;
+            }   
+        }
+    }
+
+}
