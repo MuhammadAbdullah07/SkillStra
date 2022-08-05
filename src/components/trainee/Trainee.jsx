@@ -8,10 +8,10 @@ export default function Trainee() {
       id: 1,
       tabTitle: "Bank Account",
       title: "Bank Details",
-      name: "Fatima Raza",
-      bank: "Habib Bank Limited",
-      accountNumber: "12707901027899",
-      amount: "Rs xxxx",
+      name: "MAIRA TANWEER",
+      bank: "Bank Alfalah",
+      accountNumber: "00081006935057",
+      amount: "PK29ALFH0008001006935057",
     },
   ];
 {/*    incase if you want to add then add this after id 1 above
@@ -57,7 +57,7 @@ export default function Trainee() {
                 <p>Name: {tab.name}</p>
                 <p>Bank: {tab.bank}</p>
                 <p>Account Number: {tab.accountNumber}</p>
-                <p>Amount: {tab.amount}</p>
+                <p>IBAN: {tab.amount}</p>
               </div>
             )}
           </div>

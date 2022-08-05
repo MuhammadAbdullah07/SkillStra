@@ -11,10 +11,10 @@ export default function Events()
       <div className='row-up'>
           <img src='eventbg.jpg' alt=''></img>
           <div class="centered">
-          <h1>Stress Management</h1>
-          <p>Date: DD/MM/YY</p>
-          <p>Venue: Location</p>
-          <p>Registration Fee: XXXX Rs</p>
+          <h1>Graphic Designing in Adobe Illustrator</h1>
+          <p>Date:Wednesday,August 10th,2022</p>
+          <p>Venue:Joy Co Rwp</p>
+          <p>Registration Fee: 1800 Rs</p>
           <br></br>
           <br></br>
           <a href='#register'>Click for Registration</a>
